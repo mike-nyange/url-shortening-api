@@ -263,3 +263,31 @@
     color: white;
     background-color: var( --neutral-dark-blue);
 }
+
+/** Footer **/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--neutral-darkviolet);
+    padding: 3em;
+}
+.footer .logo{
+    color: white;
+}
+
+.footer .footer-column h3{
+  color: white;  
+}
+.footer .footer-column ul li{
+    list-style: none;
+}
+.footer .footer-column ul li a{
+  color: var(--neutral-gray);  
+  text-decoration: none;
+}
+.footer .footer-column ul li a:hover{
+    color: var(--primary-cyan);
+}
+
