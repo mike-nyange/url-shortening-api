@@ -145,7 +145,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 2em;
 }
 .url-section .url-shortener{
     width: 75%;
@@ -176,7 +175,18 @@
     margin-left: 2em;
     border-radius: 10px;
 }
-.url-section .responses{
+
+
+/* Responses Section */
+.response-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--background-gray);
+}
+.responses{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,20 +198,19 @@
     margin-bottom: 2em;
     padding: 0em 2em;
     font-size: 18px;
-    display: none;
 }
-.url-section .responses .short-url{
+.short-url{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
    
 }
-.url-section .responses .short-url p{
+.short-url p{
     color: var(--primary-cyan);
     margin-right: 2em;
 }
-.url-section .responses .short-url .copy-btn{
+.copy-btn{
     color: white;
     border: none;
     outline:none;
@@ -216,6 +225,13 @@
     border-radius: 10px;
 }
 
+.test{
+    background-color: red;
+    height: 4em;
+    width: 75%;
+    padding: 2em 0;
+    margin-bottom: 2em;
+}
 
 /** Advanced Statistics Section **/
 .advanced-statistics{
