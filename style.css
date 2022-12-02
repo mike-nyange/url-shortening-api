@@ -105,10 +105,15 @@
     color: var(--neutral-dark-blue);
 }
 .header-section .hamburger-menu{
-    position: absolute;
+    
     top: 1em;
     right: 1em;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
     display: none;
+    cursor: pointer;
+    color: var(--neutral-gray);
     /* height: 5em;
     width: 5em; */
 }
@@ -155,6 +160,12 @@
     height: 100%;
     transform: translateX(2em);
 }
+@media all and (max-width: 1024px){
+    .showcase{
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+}
 
 /** Url Shortening Section **/
 
@@ -177,6 +188,7 @@
     background-color: var(--primary-dark-violet);
     border-radius: 10px;
     transform: translateY(-4em);
+    overflow-y: hidden;
     padding-left: 4em;
     padding-right: 4em;
 }
