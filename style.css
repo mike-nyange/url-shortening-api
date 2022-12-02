@@ -104,6 +104,26 @@
     
     color: var(--neutral-dark-blue);
 }
+.header-section .hamburger-menu{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    display: none;
+    height: 5em;
+    width: 5em;
+}
+
+@media all and (max-width: 1024px){
+    .header-section .navigation{
+        display: none;        
+    }
+    .header-section .button-section{
+        display: none;
+    }
+    .header-section .hamburger-menu{
+        display: block;
+    }
+}
 
 
 /** Showcase Section**/
