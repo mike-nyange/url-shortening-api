@@ -98,6 +98,8 @@
 const shortenerButton = document.getElementById("url-shortener-button");
 const inputField = document.getElementById("url-shortener-form"); 
 const responseContainer = document.getElementById("response-container")
+const errorText = document.getElementById("error-text")
+
 
 shortenerButton.addEventListener("click", async (e) => {
   e.preventDefault()
@@ -111,6 +113,13 @@ shortenerButton.addEventListener("click", async (e) => {
     if (!data.ok){
       //testing promise
       //console.log(data)
+      inputField.classList.add("error-input")
+      errorText.className = "error-text"
+      errorText.innerText = "Please enter a valid link"
+      setTimeout(() => {
+        inputField.classList.remove("error-input")
+        errorText.className = "error"
+      }, 4000)
     }else{
       console.log(data)
       // const responseContainer = document.createElement("div")
@@ -158,3 +167,8 @@ responseContainer.addEventListener("click", async (e) => {
      })
   }
 })
+
+//Form validation
+
+
+

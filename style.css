@@ -214,9 +214,12 @@
     align-items: center;
     text-align: center;
 }
+.url-shortener{
+    position: relative;
+}
 .url-section .url-shortener{
     width: 75%;
-    height: 8em;
+    height: 10em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,7 +234,7 @@
 }
 .url-section .url-shortener #url-shortener-form{
     width: 80%;
-    height: 4em;
+    height: 3.5em;
     padding: 0.5em;
     padding-left: 2em;
     color: var(--neutral-gray);
@@ -241,9 +244,25 @@
 }
 .url-section .url-shortener #url-shortener-button{
     width: 20%;
+    height: 3.5em;
     margin-left: 2em;
     border-radius: 10px;
 }
+.error-text{
+    position: absolute;
+    bottom: 0.5em;
+    left: 4.5em;
+    padding-top: 0.3em;
+    color: var(--secondary-red);
+}
+.error-input{
+    border: 3px solid var(--secondary-red);
+    color: var(--secondary-red);
+}
+.error{
+    display: none;
+}
+
 
 @media all and (max-width: 1024px){
     .url-section .url-shortener{
@@ -253,8 +272,9 @@
         text-align: center;
         flex-direction: column;
         width: 90%;
+        height: 12em;
         padding: 5em;
-        background-image: url(/images/bg-shorten-mobile.svg);
+        background-image: url(/images/bg-shorten-mobile.svg) cover center center no-repeat;
     }
     .url-section .url-shortener #url-shortener-form{
         width: 100%;
@@ -267,6 +287,18 @@
         border-radius: 10px;
         margin-top: 1em;
     }
+    .error-text{
+        width: 100%;
+        position: relative;
+        left: 0;
+        text-align: left;
+        padding-top: 1em;
+        color: var(--secondary-red);
+    }
+    .error{
+        display: none;
+    }
+    
 }
 
 
@@ -501,6 +533,12 @@
         align-items: center;
         text-align: center;
         
+    }
+    .footer-column{
+        margin-bottom: 1em;
+    }
+    .company{
+        margin-bottom: 1em;
     }
 }
 
