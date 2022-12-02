@@ -99,6 +99,14 @@ const shortenerButton = document.getElementById("url-shortener-button");
 const inputField = document.getElementById("url-shortener-form"); 
 const responseContainer = document.getElementById("response-container")
 const errorText = document.getElementById("error-text")
+const showcaseButton = document.getElementById("showcase-btn")
+
+showcaseButton.addEventListener("click", () =>{
+  const urlSection = document.getElementById("url-section");
+  urlSection.scrollIntoView({
+    behavior: "smooth",
+  });
+})
 
 
 shortenerButton.addEventListener("click", async (e) => {
