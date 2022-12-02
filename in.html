@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text" style="user-select: all;">This is some shit that i want copied to the mother fucking clip board!</p>
+    <button id="btn">copy me</button>
+
+    <script>
+        const text = document.getElementById("text").innerText;
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", async () => {
+            await navigator.clipboard.writeText(text).then(() => {
+                // Alert the user that the action took place.
+                // Nobody likes hidden stuff being done under the hood!
+                alert("Copied to clipboard");})
+            btn.style.backgroundColor = "red"
+        })
+    </script>
+</body>
+</html>
