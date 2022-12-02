@@ -175,6 +175,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 4em;
+        padding: 2em;
     }
     .showcase .showcase-image {
         text-align: center;
