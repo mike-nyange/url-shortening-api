@@ -179,7 +179,7 @@
     }
     .showcase .showcase-image {
         text-align: center;
-        padding: 1em 0;
+        padding: 1em 2em;
     }
     .showcase .showcase-image img{
         width: 100%;
@@ -440,7 +440,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 10em;
+    height: 12em;
     background-image: url(/images/bg-boost-desktop.svg);
     color: white;
     background-color: var( --neutral-dark-blue);
@@ -470,9 +470,11 @@
 
 .footer .footer-column h3{
     color: #fff;  
+    margin-bottom: 1em;
 }
 .footer .footer-column ul li{
     list-style: none;
+    margin-bottom: 0.4em;
 }
 .footer .footer-column ul li a{
   color: var(--neutral-gray);  
@@ -480,6 +482,15 @@
 }
 .footer .footer-column ul li a:hover{
     color: var(--primary-cyan);
+}
+.socials{
+    display: flex;
+    row-gap: 1em;
+}
+.socials img{
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
 }
 
 @media all and (max-width: 1024px){
