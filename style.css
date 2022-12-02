@@ -278,7 +278,7 @@
     }
     .url-section .url-shortener #url-shortener-form{
         width: 100%;
-        
+        padding-left: 0.3em;
     }
     .url-section .url-shortener #url-shortener-button{
         width: 100%;
