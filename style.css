@@ -117,6 +117,30 @@
     /* height: 5em;
     width: 5em; */
 }
+.mobile-menu{
+    position: absolute;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--primary-dark-violet);
+    top: 5em;
+    
+}
+.mobile-menu .mobile-navigation li{
+    list-style: none;
+}
+.mobile-menu .mobile-navigation li a{
+    text-decoration: none;
+    color: var(--neutral-gray);
+}
+.mobile-menu .mobile-button-section{
+    display: flex;
+    flex-direction: column;
+}
 
 @media all and (max-width: 1024px){
     .header-section{
@@ -167,6 +191,7 @@
     height: 100%;
     transform: translateX(2em);
 }
+
 @media all and (max-width: 1024px){
     .showcase{
         height: 110vh;
