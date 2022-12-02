@@ -106,11 +106,11 @@
 }
 .header-section .hamburger-menu{
     position: absolute;
-    top: 2em;
-    right: 2em;
+    top: 1em;
+    right: 1em;
     display: none;
-    height: 5em;
-    width: 5em;
+    /* height: 5em;
+    width: 5em; */
 }
 
 @media all and (max-width: 1024px){
