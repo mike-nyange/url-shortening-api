@@ -146,6 +146,15 @@ responseContainer.addEventListener("click", async (e) => {
       e.target.className = "copy-btn"
       e.target.innerText = `Copy`
      }, 4000);
-     e.target.previousElement
+     
+     const hidden = document.getElementById("hidden")
+     shortenedUrl = document.getElementById("full_short_link").innerHTML
+     //hidden.value = shortenedUrl
+     //hidden.select()
+     //hidden.setSelectionRange(1,999)
+     navigator.clipboard.writeText(shortenedUrl)
+     .then(() => {
+      console.log("copied to clipboard")
+     })
   }
 })
