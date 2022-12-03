@@ -176,7 +176,15 @@ responseContainer.addEventListener("click", async (e) => {
   }
 })
 
-//Form validation
+//Hamburger Menu
+
+const hamburgerMenu = document.getElementById("hamburger-menu")
+const mobileMenu = document.getElementById("mobile-menu")
+
+
+hamburgerMenu.addEventListener("click", () =>{
+  mobileMenu.classList.add("mobile-menu")
+})
 
 
 

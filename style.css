@@ -128,10 +128,17 @@
     flex-direction: column;
     background-color: var(--primary-dark-violet);
     top: 5em;
-    
+    border-radius: 10px;
+    z-index: 1000;
+}
+.mobile-menu .mobile-navigation{
+    padding: 2em 2em 0 2em;
+    width: 80%;
+    border-bottom: 2px solid var(--neutral-gray);
 }
 .mobile-menu .mobile-navigation li{
     list-style: none;
+    margin-bottom: 1em;
 }
 .mobile-menu .mobile-navigation li a{
     text-decoration: none;
@@ -140,6 +147,12 @@
 .mobile-menu .mobile-button-section{
     display: flex;
     flex-direction: column;
+    padding: 1.5em;
+}
+.mobile-menu .mobile-button-section a{
+    color: var(--neutral-gray);
+    margin-bottom: 1em;
+    text-decoration: none;
 }
 
 @media all and (max-width: 1024px){
