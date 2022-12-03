@@ -183,7 +183,13 @@ const mobileMenu = document.getElementById("mobile-menu")
 
 
 hamburgerMenu.addEventListener("click", () =>{
-  mobileMenu.classList.add("mobile-menu")
+  
+  if (mobileMenu.style.display === "block") {
+    mobileMenu.style.display = "none";
+  } else {
+    mobileMenu.style.display = "block";
+  }
+  //mobileMenu.classList.add("mobile-menu")
 })
 
 

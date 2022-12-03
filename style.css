@@ -130,6 +130,7 @@
     top: 5em;
     border-radius: 10px;
     z-index: 1000;
+    display: none;
 }
 .mobile-menu .mobile-navigation{
     padding: 2em 2em 0 2em;
